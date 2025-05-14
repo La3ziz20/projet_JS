@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu Gourmand | Restaurant Tunisien</title>
+  <link rel="icon" href="https://png.pngtree.com/png-clipart/20230814/original/pngtree-brown-map-pin-location-with-restaurant-icon-and-gradation-color-vector-png-image_10354731.png" >
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="cart-icon" id="cart-icon">
+    🛒
+    <span class="cart-count" id="cart-count">0</span>
+  </div>
+
+  <div class="container">
+    <h1>Menu Gourmand</h1>
+    <div class="category-buttons">
+      <button onclick="filterMenu('All')" class="active">Tous</button>
+      <button onclick="filterMenu('Entrées')">Entrées</button>
+      <button onclick="filterMenu('Plats Principaux')">Plats Principaux</button>
+      <button onclick="filterMenu('Desserts')">Desserts</button>
+      <button onclick="filterMenu('Boissons')">Boissons</button>
+      
+    </div>
+    <div id="menu"></div>
+
+    <div id="cart">
+      <h2><span>🛒</span> Votre Panier</h2>
+      <div id="cart-items">
+        <div class="empty-cart">Votre panier est vide</div>
+      </div>
+      <div class="total">Total : <span id="total">0</span> DT</div>
+      <button id="reset-cart">Vider le panier</button>
+      <button id="validate-order" disabled>Valider la commande</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
